@@ -12,7 +12,7 @@ CREATE TABLE reservations (
     reservation_date DATE NOT NULL,
     reservation_time TIME NOT NULL,
     special_requests TEXT,
-    status ENUM('pending', 'confirmed', 'cancelled') DEFAULT 'confirmed',
+    status ENUM('pending', 'confirmed', 'cancelled', 'completed') DEFAULT 'confirmed',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
